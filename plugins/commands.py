@@ -1490,3 +1490,22 @@ async def clean_groups_handler(client, message):
         except Exception as e:
             print(f'Error in clean_groups loop: {e}')
     await msg.edit(f'**Clean Groups Complete**\n\nTotal Processed: {processed}\nDeleted: {deleted_count}')
+
+@Client.on_message(filters.command('getlink') & filters.user(ADMINS))
+async def get_link(client, message):
+    if len(message.command) < 2:
+        await message.reply_text("Usage: /getlink movie name")
+        return
+    title = ' '.join(message.command[1:]).strip()  # Join all words after the command
+    formatted_data = title.replace(' ', '-')  # Replace spaces with hyphens    
+    url = f'https://t.me/{temp.U_NAME}?start=getfile-{formatted_data}'
+    await message.reply_text(f"**Here is your link:**\n🔗 {url}")
+
+@Client.on_message(filters.command("cleargroups") & filters.user(ADMINS))
+async def clear_groups(_, message):
+    try:
+        await db.grp.delete_many({})
+        await message.reply_text("✅ All group data cleared successfully.")
+    except Exception as e:
+        await message.reply(f"❌ Error clearing group: {e}")
+

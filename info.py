@@ -61,7 +61,7 @@ auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937")# Channels for
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://t.me/DPCBackup_Support')    # QR code image for payments
+QR_CODE = environ.get('QR_CODE', 'https://t.me/DPCBackupAdmin')    # QR code image for payments
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'CONTACT ADMIN')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
@@ -96,14 +96,14 @@ LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True)) # Shows landscape
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channel Id 
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
-VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
+IS_VERIFY = is_enabled('IS_VERIFY', True)  # Verification On (True) / Off (False)
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003392893257')) #Verification Channel Id 
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003474511025')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
+VERIFY_IMG = environ.get("VERIFY_IMG", "https://ibb.co/fdGgWfbZ")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/dreamxbotz")   # Tutorial link for verification
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/dreamxbotz")   # Second tutorial link for verification
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/dreamxbotz")   # Third tutorial link for verification
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/DPCBackup_ARLinks_Movie_Links/7127")   # Tutorial link for verification
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/DPCBackup_ARLinks_Movie_Links/7127")   # Second tutorial link for verification
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/DPCBackup_ARLinks_Movie_Links/7127")   # Third tutorial link for verification
 
 # Verification (Must Fill All Veriables. Else You Got Error
 SHORTENER_API = environ.get("SHORTENER_API", "a7ac9b3012c67d7491414cf272d82593c75f6cbb") # Shortener API key
@@ -121,9 +121,9 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/dreamxbotz') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/dreamxbotz') # Owner link for the bot
-UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/dreamxbotz') # Update channel link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/DPCBackup_Group') # Group link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/DPCBackupAdmin') # Owner link for the bot
+UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/DPCBackup') # Update channel link for the bot
 
 # ============================
 # User Configuration
@@ -135,12 +135,12 @@ PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in envir
 # ============================
 # Miscellaneous Configuration
 # ============================
-ULTRA_FAST_MODE = is_enabled(environ.get('ULTRA_FAST_MODE', "False"), True) # Set to True for fast search, False for original search
+ULTRA_FAST_MODE = is_enabled(environ.get('ULTRA_FAST_MODE', "True"), True) # Set to True for fast search, False for original search
 
 MAX_B_TN = environ.get("MAX_B_TN", "5") # Maximum number of buttons in a row (default: 5)
 PORT = int(environ.get("PORT", "8080"))  # Port for the web server (default: 8080)
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️') # Alert message for users
-DELETE_TIME = int(environ.get("DELETE_TIME", "300"))  #  deletion time in seconds (default: 5 minutes). Adjust as per your needs.
+DELETE_TIME = int(environ.get("DELETE_TIME", "86400"))  #  deletion time in seconds (default: 5 minutes). Adjust as per your needs.
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")   # Custom caption for files
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION) # Custom caption for batch files
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")     # Custom IMDB template 
@@ -149,7 +149,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))  # Index 
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))  # True if you want no results messages in Log Channel
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)    # Max Button On (True) / Off (False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)    # P_TTI_SHOW_OFF On (True) / Off (False)
-IMDB = is_enabled((environ.get('IMDB', "True")), False)    # IMDB Results On (True) / Off (False)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)    # IMDB Results On (True) / Off (False)
 TMDB_ON_SEARCH = is_enabled((environ.get('TMDB_ON_SEARCH', "False")), False)    # Use TMDB Poster On Search Results
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True) # Auto Filter On (True) / Off (False)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True) # Auto Delete On (True) / Off (False)
@@ -161,7 +161,7 @@ PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (F
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))  # Emoji status On (True) / Off (False)
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "False")), False) # pm & Group button or link mode (True) / Off (False)
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False
-PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', False)) # Set Stream mode True or False only for premium users
+PREMIUM_STREAM_MODE = bool(environ.get('PREMIUM_STREAM_MODE', True)) # Set Stream mode True or False only for premium users
 
 
 # ============================
@@ -179,24 +179,69 @@ SEASON_COUNT = 12
 SEASONS = [f"S{str(i).zfill(2)}" for i in range(1, SEASON_COUNT + 1)]
 
 BAD_WORDS = {
-    "PrivateMovieZ",
-    "toonworld4all",
-    "themoviesboss",
-    "1tamilmv",
-    "tamilblasters",
+    ".Com",
     "1tamilblasters",
-    "skymovieshd",
+    "1tamilmv",
+    "4kHdHub",
+    "Anime_Closx",
+    "AtoZ_Files",
+    "Backup",
+    "BhaduMovies",
+    "BollyWeeBHolly",
+    "Channel",
+    "cinexoticmovies",
+    "CinevooD",
+    "Desiflix1",
     "extraflix",
-    "hdm2",
-    "moviesmod",
     "hdhub4u",
-    "mkvcinemas",
-    "primefix",
+    "hdm2",
+    "HDmovie99",
+    "hub",
+    "IMAXPrime",
     "join",
-    "www",
-    "villa",
+    "Immortal",
+    "MasaFun",
+    "Masahub",
+    "mkvcinemas",
+    "Moonknight_media",
+    "MoviesFlix",
+    "moviesmod",
+    "Ms",
+    "NxSiddh",
+    "ORGPrime",
+    "original",
+    "Ospreay",
+    "Pahe",
+    "Premium",
+    "primefix",
+    "PrivateMovieZ",
+    "PSA",
+    "PunisheR",
+    "Pw",
+    "RARBG",
+    "RR",
+    "silent",
+    "skymovieshd",
+    "spidey",
+    "PIRO",
+    "Telegram",
+    "TAE",
+    "tamilblasters",
+    "TamilLinkOfficial",
+    "TDP",
+    "team",
+    "TeamSeries",
+    "Telly",
     "tg",
-    "original"
+    "The",
+    "themoviesboss",
+    "toonworld4all",
+    "Tv",
+    "TvShowHub",
+    "twg_arena",
+    "villa",
+    "www",
+    "Xyz"
 } # Set of bad words to filter out
    
 
@@ -216,9 +261,9 @@ FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else 
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'dreamXBotz'))
+SESSION_NAME = str(environ.get('SESSION_NAME', 'DPCBackup'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'DREAMXBOTZ'))
+name = str(environ.get('name', 'DPCBackup'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True

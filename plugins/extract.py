@@ -189,7 +189,7 @@ async def extract_data_handler(client: Client, query: CallbackQuery):
             page_parts.append("<b>Subtitle Tracks:</b> None<br>")
 
         page_parts.append(
-            '<i><code>Join <a href="https://t.me/DreamxBotz">DreamxBotz</a></code></i>'
+            '<i><code>Join <a href="https://t.me/DPCBackup">DPCBackup</a></code></i>'
         )
 
         page_content = "".join(page_parts)
@@ -199,7 +199,7 @@ async def extract_data_handler(client: Client, query: CallbackQuery):
                 telegraph.create_page,
                 title=safe_title[:200],
                 html_content=page_content,
-                author_name="DreamxBotz"
+                author_name="DPCBackup"
             )
         except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
             await query.message.reply_text("⚠️ Telegraph is busy. Try again later.", quote=True)

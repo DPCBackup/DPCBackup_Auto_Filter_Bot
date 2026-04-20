@@ -122,7 +122,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/DPCBackup_Group') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/DPCBackupAdmin') # Owner link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/DPCBackup_Support_Bot') # Owner link for the bot
 UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/DPCBackup') # Update channel link for the bot
 
 # ============================

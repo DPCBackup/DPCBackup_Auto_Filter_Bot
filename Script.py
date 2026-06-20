@@ -340,7 +340,7 @@ BPREMIUM_TXT = """<blockquote>🎁 <b>𝖯𝖱𝖤𝖬𝖨𝖴𝖬 𝖬𝖮𝖵�
 <b>‼️ ᴀꜰᴛᴇʀ ꜱᴇɴᴅɪɴɢ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ɢɪᴠᴇ ᴜꜱ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪꜱᴛ.</b>"""
 
 
-    PREPLANS_TXT = PREMIUM_TXT = """<b>👋 ʜᴇʏ {},
+    PREPLANS_TXT = PREMIUM_TXT = """<b>👋 ʜᴇʏ {},</b>
 
 <blockquote>🎖️ <b>𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖯𝖫𝖠𝖭𝖲</b></blockquote>
 

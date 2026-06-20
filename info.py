@@ -65,8 +65,6 @@ QR_CODE = environ.get('QR_CODE', 'https://t.me/DPCBackup_Support_Bot')    # QR c
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ: @DPCBackup_Support_Bot')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
-    100: "1month",    
-    200: "3month", 
     300: "6month",
     500: "1year",
 }  # Premium plans with their respective durations in days

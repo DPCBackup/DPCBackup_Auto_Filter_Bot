@@ -55,7 +55,7 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003316670725')  # Request cha
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/DPCBackup_Group')  # Support group link (make sure bot is admin)
 
 # FORCE_SUB 
-auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1003103473451")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
+auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1003103473451 -1003909950578")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
 auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937")# Channels for force sub (make sure bot is admin)
 
 # ============================

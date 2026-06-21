@@ -56,7 +56,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/DPCBackup_Group')  # Su
 
 # FORCE_SUB 
 auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1003103473451 -1003909950578")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937")# Channels for force sub (make sure bot is admin)
+auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937 -1002564917822")# Channels for force sub (make sure bot is admin)
 
 # ============================
 # Payment Configuration

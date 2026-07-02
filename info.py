@@ -43,7 +43,7 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://ibb.co/chRtcwTK https://ibb.co/zV
 # ============================
 # Admin, Channels & Users Configuration
 # ============================
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8759957086 7638788211 8397763468').split()] # Replace with the actual admin ID(s) to add
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7638788211').split()] # Replace with the actual admin ID(s) to add
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002334064264 -1003432455254 -1003684244916').split()]  # Channel id for auto indexing (make sure bot is admin)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003244820346'))  # Log channel id (make sure bot is admin)
@@ -55,14 +55,14 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003316670725')  # Request cha
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/DPCBackup_Group')  # Support group link (make sure bot is admin)
 
 # FORCE_SUB 
-auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1003103473451 -1003909950578")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937 -1002564917822")# Channels for force sub (make sure bot is admin)
+auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
+auth_channels     = environ.get("AUTH_CHANNELS", "-1001432367937")# Channels for force sub (make sure bot is admin)
 
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://t.me/DPCBackup_Support_Bot')    # QR code image for payments
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ: @DPCBackup_Support_Bot')    # Owner UPI ID for payments
+QR_CODE = environ.get('QR_CODE', 'https://t.me/IamMrSingh')    # QR code image for payments
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ: @IamMrSingh')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
     50: "1month",    
@@ -122,7 +122,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/DPCBackup_Group') # Group link for the bot
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/DPCBackup_Support_Bot') # Owner link for the bot
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/IamMrSingh') # Owner link for the bot
 UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/DPCBackup') # Update channel link for the bot
 
 # ============================
